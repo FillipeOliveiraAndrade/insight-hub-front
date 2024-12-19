@@ -1,0 +1,57 @@
+/* Contêiner do catálogo */
+.container-catalog {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #FEF6EF;
+  box-sizing: border-box;
+}
+
+/* Aba de produtos avaliados */
+.products-evaluated {
+  background-color: #f7f7ff;
+  height: 670px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  padding: 20px;
+  margin-top: 18px;
+}
+
+.products-evaluated h3 {
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 2px solid #757575;
+  padding-bottom: 12px;
+  text-align: center;
+}
+
+.products-evaluated p {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 50%; /* Centraliza verticalmente dentro da aba */
+  transform: translateY(-50%);
+}
+
+/* Catálogo de produtos */
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+
+  width: 100%; /* Ocupa o restante do espaço */
+  max-width: 900px; /* Largura máxima */
+  margin: 0 auto; /* Centraliza o grid horizontalmente */
+  padding: 20px; /* Espaçamento interno */
+}
+
+/* Div vazia para equilíbrio */
+.div {
+  width: 300px; /* Mesmo tamanho que a aba */
+}
